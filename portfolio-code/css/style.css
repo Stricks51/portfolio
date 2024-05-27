@@ -1,34 +1,104 @@
-html, body{
-    scroll-behavior: smooth;
-  }
-  
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      outline: none;
-    }
-
 @font-face {
     font-family: 'PP Radio Grotesk Black';
     font-style: normal;
-    src: url(/public/typography/PPRadioGrotesk-Black.woff2);
+    src: url(/typography/PPRadioGrotesk-Black.woff2);
 }
 
 @font-face {
-    font-family: 'PP Radio Grotesk Black';
+    font-family: 'PP Radio Grotesk Light';
     font-style: normal;
-    src: url(/public/typography/PPRadioGrotesk-Light.woff2);
+    src: url(/typography/PPRadioGrotesk-Light.woff2);
 }
 
 @font-face {
     font-family: 'PP Mori Book';
     font-style: normal;
-    src: url(/public/typography/PPMori-Book.woff2);
+    src: url(/typography/PPMori-Book.woff2);
 }
 
 @font-face {
     font-family: 'PP Mori Regular';
     font-style: normal;
-    src: url(/public/typography/PPMori-Regular.woff2);
+    src: url(/typography/PPMori-Regular.woff2);
+}
+
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: aqua;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.container{
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: 0;
+}
+
+.container-elements{
+    display: flex;
+    flex-direction: row;
+    /* set width to amount of pages (currently 6) */
+    width: 600vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+section.one{ /* Landing page */
+    background-color: #080708;
+    color: #DF2935;
+}
+section.two{ /* Intro page */
+    background-color: #DF2935;
+    color: #FBFCFF;
+}
+section.three{ /* Project page */
+    background-color: #0099FF;
+    color: #FBFCFF;
+}
+section.four{ /* Project page */
+    background-color: #FDE74C;
+    color: #080708;
+}
+section.five{ /* About Me page */
+    background-color: #FBFCFF;
+    color: #080708;
+}
+section.six{ /* Contact page */
+    background-color: #080708;
+    color: #FBFCFF;
+}
+
+h1{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 160px;
+}
+
+h2{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 80px;
 }
