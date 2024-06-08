@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'PP Radio Grotesk Black';
+    font-style: normal;
+    src: url(/typography/PPRadioGrotesk-Black.woff2);
+}
+
+@font-face {
+    font-family: 'PP Radio Grotesk Light';
+    font-style: normal;
+    src: url(/typography/PPRadioGrotesk-Light.woff2);
+}
+
+@font-face {
+    font-family: 'PP Mori Book';
+    font-style: normal;
+    src: url(/typography/PPMori-Book.woff2);
+}
+
+@font-face {
+    font-family: 'PP Mori Regular';
+    font-style: normal;
+    src: url(/typography/PPMori-Regular.woff2);
+}
+
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: aqua;
+}
+
+h1{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 160px;
+}
+
+h2{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 80px;
+}
+
+/* Navbar Styling */
+.header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    position: fixed;
+    z-index: 1;
+}
+
+.inheader{
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container a{
+    color:#FBFCFF;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "MontThin";
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 600;
+}
+
+.logo_container a span{
+    font-family: "MontSemiBold";
+}
+
+.navbar{
+    float: right;
+    height: 100%;
+}
+
+.navbar a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+.navbar a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color:#FBFCFF;
+    font-family: "MontSemiBold";
+    font-size: 16px;
+}
+
+.navbar a li:hover{
+    color: red;
+    transition: .4s;
+}
+
+/* fixing the position of scroll indicator */
+.scroll {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    left: 50%;
+    width: 50%;
+    background-color:aqua
+    
+}
+
+/* container holding the scrolling bar */
+.progress-container{
+    width: 100%;
+    height: 20px;
+    background: pink;
+}
+
+/* the scrolling bar */
+.progress-bar{
+    height: 20px;
+    background: orange;
+    width: 0%;
+}
+
+/* sideways scrolling */
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container{
+    width: 600vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: row;
+    
+    /* make the page rotate to horizontal */
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+
+    /* hide the scroll bars */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: 0;
+}
+
+.container-elements{
+    display: flex;
+    flex-direction: row;
+    /* set width to amount of pages (currently 6) */
+    width: 600vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+/* hide the scroll bar */
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* each section of the page */
+
+section.one{ /* Landing page */
+    background-color: #080708;
+    color: #DF2935;
+}
+section.two{ /* Intro page */
+    background-color: #DF2935;
+    color: #FBFCFF;
+}
+section.three{ /* Project page */
+    background-color: #0099FF;
+    color: #FBFCFF;
+}
+section.four{ /* Project page */
+    background-color: #FDE74C;
+    color: #080708;
+}
+section.five{ /* About Me page */
+    background-color: #FBFCFF;
+    color: #080708;
+}
+section.six{ /* Contact page */
+    background-color: #080708;
+    color: #FBFCFF;
+}
+
