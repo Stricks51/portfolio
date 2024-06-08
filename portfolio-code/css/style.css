@@ -1,78 +1,83 @@
 @font-face {
     font-family: 'PP Radio Grotesk Black';
     font-style: normal;
-    src: url(/typography/PPRadioGrotesk-Black.woff2);
+    src: url(/typography/PPRadioGrotesk-Black.woff2) format(woff2);
 }
 
 @font-face {
     font-family: 'PP Radio Grotesk Light';
     font-style: normal;
-    src: url(/typography/PPRadioGrotesk-Light.woff2);
+    src: url(/typography/PPRadioGrotesk-Light.woff2) format(woff2);
 }
 
 @font-face {
     font-family: 'PP Mori Book';
     font-style: normal;
-    src: url(/typography/PPMori-Book.woff2);
+    src: url(/typography/PPMori-Book.woff2) format(woff2);
 }
 
 @font-face {
     font-family: 'PP Mori Regular';
     font-style: normal;
-    src: url(/typography/PPMori-Regular.woff2);
+    src: url(/typography/PPMori-Regular.woff2) format(woff2);
 }
 
-*{
-    
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
+
 
 body{
-    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
+.header {
+    color: #FBFCFF;
+}
+
+h2{
+    font-family: 'PP Radio Grotesk Light';
+    font-size: 2vw;
+    text-align: left;
+    padding-left: 2%;
+    margin-bottom: 0px;
+}
+
+h1{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 11vw;
+    text-align: center;
+    color: #FBFCFF;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 span.red{
+    color: #DF2935;
+}
+
+h1 span.blue{
+    color: #0099FF;
+}
+
+
+/* sections pages */
 section{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-
-.container{
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scrollbar-width: 0;
-}
-
-.container-elements{
-    display: flex;
-    flex-direction: row;
-    /* set width to amount of pages (currently 6) */
-    width: 600vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;  
 }
 
 
-::-webkit-scrollbar{
-    display: none;
-}
+
+/* each section of the page */
 
 section.one{ /* Landing page */
     background-color: #080708;
-    color: #DF2935;
+    align-items: center;
+    justify-content: center;
 }
-section.two{ /* Intro page */
+section.two{ /* Mission page */
     background-color: #DF2935;
     color: #FBFCFF;
 }
@@ -93,12 +98,3 @@ section.six{ /* Contact page */
     color: #FBFCFF;
 }
 
-h1{
-    font-family: 'PP Radio Grotesk Black';
-    font-size: 160px;
-}
-
-h2{
-    font-family: 'PP Radio Grotesk Black';
-    font-size: 80px;
-}
