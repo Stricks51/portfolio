@@ -229,10 +229,12 @@ section{
     font-size: 3.5vw;
     text-align: left;
     position: absolute;
-    left: 18%;
+    left: 17%;
     top: 27%;
 }
-.three{ /* Project page */
+
+/* Project page */
+.three{ 
     color: #FBFCFF;
     background-image: url(background-project1.jpg);
     height: 100vh;
@@ -240,8 +242,79 @@ section{
     background-size: cover;
     background-position: center;
     z-index: -1;
+    position: relative;
 }
-.four{ /* Project page */
+
+.three h2{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 2.5vw;
+    position: absolute;
+    padding: 3%;
+    bottom: 0;
+}
+
+.project-top{
+    position: absolute;
+    left: 17.24%;
+    top: 20%;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-top img{
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+    height: auto;   
+}
+
+.project-top h3{
+    font-family: 'PP Mori Regular';
+    font-size: 2vw;
+    margin-top: 7%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.project-top p{
+    font-family: 'PP Mori Book';
+    font-size: 0.8vw;
+    margin-top: 0.4%;
+    margin-left: 8%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.project-bottom{
+    position: absolute;
+    left: 52.7%;
+    bottom: 2.4%;
+}
+
+.project-bottom img{
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-bottom h3{
+    font-family: 'PP Mori Regular';
+    font-size: 2vw;
+    margin-top: 7%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.project-bottom p{
+    font-family: 'PP Mori Book';
+    font-size: 0.8vw;
+    margin-top: 0.4%;
+    margin-left: 8%;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Project page 2 */
+.four{ 
     color: #080708;
     background-image: url(background-project2.jpg);
     height: 100vh;
@@ -249,8 +322,20 @@ section{
     background-size: cover;
     background-position: center;
     z-index: -1;
+    position: relative;
 }
-.five{ /* About Me page */
+
+.four h2{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 2.5vw;
+    position: absolute;
+    padding: 3%;
+    bottom: 0;
+}
+
+/* About Me page */
+
+.five{ 
     color: #080708;
     background-image: url(background-about.jpg);
     height: 100vh;
@@ -258,22 +343,86 @@ section{
     background-size: cover;
     background-position: center;
     z-index: -1;
+    position: relative;
 }
-.six{ /* Contact page */
+
+.about-txt{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 32%;
+    padding-right: 32%;
+    top: 30vh;
+}
+
+.about-txt p{
+    font-family: 'PP Mori Book';
+    text-align: left;
+    font-size: 1.5vw;
+
+}
+
+.five h2{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 2.5vw;
+    position: absolute;
+    padding: 3%;
+    bottom: 0;
+}
+
+
+/* Contact page */
+.six{ 
     background-color: #080708;
     color: #FBFCFF;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: flex;
 }
 
 .flag-last{
-    position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
+    position: relative;
 }
 
 .flag-last img{
     align-self: flex-end;
+}
+
+.footer{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer h1{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 11vw;
+    color: #0099FF;
+    margin: 0;
+    padding: 0;
+}
+
+.footer h1 span.red{
+    color: #DF2935;
+}
+
+.footer img{
+    padding: 5%;
+    transition: transform .5s ease-in-out;
+}
+
+.footer img:hover{
+    transform: rotate(120deg);
+    opacity: 80%;
+}
+
+.footer a:visited{
+    color: transparent;
 }
 
