@@ -24,6 +24,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
 }
 
 body{
@@ -32,6 +33,7 @@ body{
     height: 100%;
     box-sizing: border-box;
 }
+
 /* Navbar Styling */
 .navigation{
     width: 100%;
@@ -40,8 +42,6 @@ body{
     background-color: transparent;
     position: absolute;
     z-index: 1;
-    
-
 }
 
 .inheader{
@@ -100,11 +100,57 @@ body{
     transition: .4s;
 }
 
+/* scrolling idicator
+ height: 600px;
+    width: 140px;
+    position: fixed;
+    display: block;
+    top: 20vh;
+    z-index: 1;
+    
+    right: 2vw; */
+
+/* Style the header: fixed position (always stay at the top) */
+.progress-section {
+    position: fixed;
+    top: 20%;
+    right: 2vw;
+    z-index: 1;
+    height: 600px;
+    width: 140px;
+    display: flex;
+    transform: 0.3s ease-out;
+    background-image: url(scroll-indicator-white.svg);
+    background-repeat: no-repeat;
+  }
+ 
+  /* The progress container (grey background) */
+  .progress-container {
+    position: relative;
+    width: 114px;
+    background: transparent;
+    z-index: 0;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #04AA6D;
+    background-image: url(indicator.svg);
+    background-repeat: no-repeat;
+  }
+  
+
 /* each section of the page */
 section{
     width: 100%;
     min-height: 100vh;
-    display: flex;  
+    display: flex;
+    scroll-snap-align: start;
 }
 
 /* hero section */
