@@ -34,6 +34,10 @@ body{
     box-sizing: border-box;
 }
 
+body.is-reversed  .progress-section{
+    background-image: url(scroll-indicator-black.svg);
+}  
+
 /* Navbar Styling */
 .navigation{
     width: 100%;
@@ -100,48 +104,46 @@ body{
     transition: .4s;
 }
 
-/* scrolling idicator
- height: 600px;
-    width: 140px;
-    position: fixed;
-    display: block;
-    top: 20vh;
-    z-index: 1;
-    
-    right: 2vw; */
+/* scrolling idicator */
 
-/* Style the header: fixed position (always stay at the top) */
 .progress-section {
     position: fixed;
-    top: 20%;
+    top: 10vw;
     right: 2vw;
     z-index: 1;
-    height: 600px;
+    height: 50vh;
     width: 140px;
     display: flex;
     transform: 0.3s ease-out;
     background-image: url(scroll-indicator-white.svg);
     background-repeat: no-repeat;
+    background-size: contain;
   }
  
-  /* The progress container (grey background) */
   .progress-container {
     position: relative;
-    width: 114px;
+    top: 1.7vh;
+    height: 43vh;
+    left: 1vw;
+    width: 140px;
     background: transparent;
     z-index: 0;
+    transform: translateY(0);
   }
   
-  /* The progress bar (scroll indicator) */
   .progress-bar {
     position: absolute;
     z-index: 0;
-    top: 0;
     width: 100%;
-    height: 0%;
-    background-color: #04AA6D;
+    height: 100%;
     background-image: url(indicator.svg);
     background-repeat: no-repeat;
+  }
+
+  .progress-bar span{
+    position: absolute;
+    height: 0vw;
+    width: 0vh;
   }
   
 
@@ -175,7 +177,7 @@ section{
 
 .header h1{
     font-family: 'PP Radio Grotesk Black';
-    font-size: 11vw;
+    font-size: 10.5vw;
     text-align: center;
     color: #FBFCFF;
     margin: 0;
@@ -459,8 +461,10 @@ section{
 }
 
 .footer img{
-    padding: 5%;
+    padding: 2%;
     transition: transform .5s ease-in-out;
+    max-width: 100%;
+    height: auto;
 }
 
 .footer img:hover{
@@ -468,7 +472,6 @@ section{
     opacity: 80%;
 }
 
-.footer a:visited{
+.footer a{
     color: transparent;
 }
-
