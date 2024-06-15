@@ -45,7 +45,7 @@ body.is-reversed  .progress-section{
     display: block;
     background-color: transparent;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .inheader{
@@ -161,6 +161,7 @@ section{
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 1;
 }
 
 .header {
@@ -171,8 +172,8 @@ section{
     font-family: 'PP Radio Grotesk Light';
     font-size: 2vw;
     text-align: left;
-    padding-left: 2%;
-    margin-bottom: 0px;
+    padding-left: 4.2vw;
+    margin-bottom: 3rem;
 }
 
 .header h1{
@@ -182,6 +183,7 @@ section{
     color: #FBFCFF;
     margin: 0;
     padding: 0;
+    line-height: 0.8;
 }
 
 
@@ -268,7 +270,6 @@ section{
     width: 100%;
     background-size: cover;
     background-position: center;
-    z-index: -1;
     position: relative;
 }
 
@@ -289,7 +290,6 @@ section{
     width: 100%;
     background-size: cover;
     background-position: center;
-    z-index: -1;
     position: relative;
 }
 
@@ -336,12 +336,16 @@ section{
 .project-bottom{
     position: absolute;
     left: 52.7%;
-    bottom: 2.4%;
+    bottom: 2.5%;
+    max-width: 100%;
+    height: auto;
 }
 
 .project-bottom img{
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+    height: auto; 
 }
 
 .project-bottom h3{
@@ -356,7 +360,7 @@ section{
     font-family: 'PP Mori Book';
     font-size: 0.8vw;
     margin-top: 0.4%;
-    margin-left: 8%;
+    margin-left: 7%;
     margin-bottom: 0;
     padding: 0;
 }
@@ -369,7 +373,6 @@ section{
     width: 100%;
     background-size: cover;
     background-position: center;
-    z-index: -1;
     position: relative;
 }
 
@@ -390,24 +393,22 @@ section{
     width: 100%;
     background-size: cover;
     background-position: center;
-    z-index: -1;
     position: relative;
 }
 
 .about-txt{
     position: absolute;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     padding-left: 32%;
     padding-right: 32%;
-    top: 30vh;
+    top: 28.7vh;
 }
 
 .about-txt p{
     font-family: 'PP Mori Book';
     text-align: left;
     font-size: 1.5vw;
+    line-height: 160%;
 
 }
 
@@ -424,6 +425,8 @@ section{
 .six{ 
     background-color: #080708;
     color: #FBFCFF;
+    height: 100vh;
+    width: 100%;
     justify-content: center;
     text-align: center;
     position: relative;
@@ -451,13 +454,13 @@ section{
 .footer h1{
     font-family: 'PP Radio Grotesk Black';
     font-size: 11vw;
-    color: #0099FF;
+    color: #DF2935;
     margin: 0;
     padding: 0;
 }
 
-.footer h1 span.red{
-    color: #DF2935;
+.footer h1 span.blue{
+    color: #0099FF;
 }
 
 .footer img{
