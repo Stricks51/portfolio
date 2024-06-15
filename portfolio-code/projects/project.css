@@ -313,7 +313,7 @@ html, body{
     padding-right: 10%;
     display: grid;
     grid-template-rows: 0.5fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em 1em;
 }
 
@@ -338,8 +338,82 @@ html, body{
 
 /* Testimonial */
 
+.testimonial{
+    position: relative;
+    background-color: #FBFCFF;
+    z-index: -2;
+}
+.testimonial img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+}
 
+/* Discover */
 
+.discover{
+    position: relative;
+    background-color: #FBFCFF;
+    z-index: -2;
+}
+.discover img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+}
 
+/* Contact */
 
+.contact{ 
+    background-color: #FBFCFF;
+    color: #FBFCFF;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+}
+
+.footer{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer h1{
+    font-family: 'PP Radio Grotesk Black';
+    font-size: 11vw;
+    color: #DF2935;
+    margin: 0;
+    padding: 0;
+}
+
+.footer h1 span.blue{
+    color: #0099FF;
+}
+
+.footer img{
+    padding: 2%;
+    transition: transform .5s ease-in-out;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer img:hover{
+    transform: rotate(120deg);
+    opacity: 80%;
+}
+
+.footer a{
+    color: transparent;
+}
 
