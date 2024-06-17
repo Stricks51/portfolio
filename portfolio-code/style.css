@@ -172,9 +172,10 @@ section{
     font-family: 'PP Radio Grotesk Light';
     font-size: 2vw;
     text-align: left;
-    padding-left: 4.2vw;
+    margin-left: 4.4%;
     margin-bottom: 3rem;
 }
+
 
 .header h1{
     font-family: 'PP Radio Grotesk Black';
@@ -370,9 +371,39 @@ section{
     font-family: 'PP Mori Book';
     font-size: 0.8vw;
     margin-top: 0.4%;
-    margin-left: 7%;
+    margin-left: 8%;
     margin-bottom: 0;
     padding: 0;
+}
+
+@media(min-width: 1935px){
+    .project-top{
+        top: 19.1vh;
+    }
+    
+    .project-bottom{
+        bottom: 1.1vh;
+    }
+}
+
+@media(min-height: 1079px){
+    .project-top{
+        top: 23.7vh;
+    }
+    
+    .project-bottom{
+        bottom: 7.6vh;
+    }
+}
+
+@media(max-width: 1536px){
+    .project-top{
+        top: 23.5vh;
+    }
+    
+    .project-bottom{
+        bottom: 7.7vh;
+    }
 }
 
 @media(max-height: 850px){
@@ -385,6 +416,26 @@ section{
         bottom: 6.35vh;
     }
 }
+
+@media(max-height: 712px){
+ 
+    .project-top{
+        top: 17.7vh;
+    }
+    
+    .project-bottom{
+        bottom: 0;
+    }
+
+    .project-bottom h3{
+        margin-top: 5.5%;
+    }
+    .project-bottom p{
+        font-size: 0.8vw;
+        margin: 0;
+    }
+}
+
 @media(min-height: 1300px){
     .project-top{
         top: 21.2vh;
@@ -393,7 +444,16 @@ section{
     .project-bottom{
         bottom: 3.93vh;
     }
+}
 
+@media(min-height: 1439px){
+    .project-top{
+        top: 23.8vh;
+    }
+    
+    .project-bottom{
+        bottom: 7.7vh;
+    }
 }
 /* Project page 2 */
 .four{ 
