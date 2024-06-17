@@ -35,7 +35,7 @@ body{
 }
 
 body.is-reversed  .progress-section{
-    background-image: url(scroll-indicator-black.svg);
+    background-image: url(/scroll-indicator-black.svg);
 }  
 
 /* Navbar Styling */
@@ -115,7 +115,7 @@ body.is-reversed  .progress-section{
     width: 140px;
     display: flex;
     transform: 0.3s ease-out;
-    background-image: url(scroll-indicator-white.svg);
+    background-image: url(/scroll-indicator-white.svg);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -136,7 +136,7 @@ body.is-reversed  .progress-section{
     z-index: 0;
     width: 100%;
     height: 100%;
-    background-image: url(indicator.svg);
+    background-image: url(/indicator.svg);
     background-repeat: no-repeat;
   }
 
@@ -266,7 +266,7 @@ section{
 /* Mission page */
 .two{ 
     color: #FBFCFF;
-    background-image: url(background-miss.jpg);
+    background-image: url(/background-miss.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -286,7 +286,7 @@ section{
 /* Project page */
 .three{ 
     color: #FBFCFF;
-    background-image: url(background-project1.jpg);
+    background-image: url(/background-project1.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -458,7 +458,7 @@ section{
 /* Project page 2 */
 .four{ 
     color: #080708;
-    background-image: url(background-project2.jpg);
+    background-image: url(/background-project2.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -478,7 +478,7 @@ section{
 
 .five{ 
     color: #080708;
-    background-image: url(background-about.jpg);
+    background-image: url(/background-about.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
